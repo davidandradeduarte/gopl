@@ -12,6 +12,7 @@ func main() {
 	for i := 0; i < 100; i++ {
 		os.Args = append(os.Args, fmt.Sprint(i))
 	}
+
 	now1 := time.Now()
 	echo1()
 	fmt.Println(time.Since(now1)) // ~ 53.485µs
