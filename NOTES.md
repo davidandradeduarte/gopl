@@ -15,6 +15,14 @@ Maps intentionally don't guarant any order.
 
 [`iota`](https://yourbasic.org/golang/iota/) is awesome!
 
+`fmt.Println` will use the `String()` method if the type has one.  
+e.g
+```golang
+func (c Celsius) String() string { return fmt.Sprintf("%g°C", c) }
+...
+fmt.Println(c) // prints: "100°C"
+```
+
 ## Questions
 
 *Q1: Why do we need the `make` command to create a map? Why can't we just declare it as a slice e.g `x := []string{}`. Same thing goes for channels or any other data structure that needs to use `make` to be initialized.*
