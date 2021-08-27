@@ -32,3 +32,8 @@ A1: TODO
 *Q2: Related with latest question, go has several ways of memory allocation and value initialization. What's the difference beyween initializing with `make`, `new` or just with regular initialization methods?*
 
 A2: TODO
+
+
+## TODO
+
+Revisite 2.3, 2.4 and 2.5 to learn more about bit operations.
