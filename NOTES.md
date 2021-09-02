@@ -33,6 +33,9 @@ fmt.Printf("%d %#[1]x %[1]X %#08[1]b", x)
 `%` indicates an adverb (formatting)
 `#` tells `Printf` to print the a leading identifier of the value's type (e.g `0x` for hexadecimal)
 `%08b` prints in binary format with 8 bits
+
+`range` performs utf8 decoding implicitly. This means we can iterate through runes (who can occupy more than one byte for non-ASCII) without the hassle to know how many bytes a rune has.
+
 ## Questions
 
 *Q1: Why do we need the `make` command to create a map? Why can't we just declare it as a slice e.g `x := []string{}`. Same thing goes for channels or any other data structure that needs to use `make` to be initialized.*
