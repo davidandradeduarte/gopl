@@ -34,6 +34,8 @@ fmt.Printf("%d %#[1]x %[1]X %#08[1]b", x)
 `#` tells `Printf` to print the a leading identifier of the value's type (e.g `0x` for hexadecimal)
 `%08b` prints in binary format with 8 bits
 
+`range` performs utf8 decoding implicitly. This means we can iterate through runes (who can occupy more than one byte for non-ASCII) without the hassle to know how many bytes a rune has.
+
 Slices yeld 3 properties: a pointer (to the underlying array), a lenght (current number of elements) and a capacity (number of elements that can be added to the underlying array).
 
 If we know the required size for the underlying array (in slices) up front, it is more efficient to allocate an array of the required size, avoiding reallocations.
